@@ -13,19 +13,19 @@ common = torch.nn.Sequential(
     *[SqueezeLayer(num_channels_between, num_channels_squeeze) for i in range(3)],
     torch.nn.Conv2d(num_channels_between, num_channels_last, kernel_size=1),
     torch.nn.LeakyReLU(),
-    torch.nn.Flatten()
+    torch.nn.Flatten(start_dim=1)
 )
 
 classifier = torch.nn.Sequential(
     common,
     torch.nn.Linear(flattened_length, 64),
     torch.nn.LeakyReLU(),
-    torch.nn.Linear(flattened_length, num_classes)
+    torch.nn.Linear(64, num_classes)
 )
 
 rotoflip_classifier = torch.nn.Sequential(
     common,
     torch.nn.Linear(flattened_length, 64),
     torch.nn.LeakyReLU(),
-    torch.nn.Linear(flattened_length, 8)
+    torch.nn.Linear(64, 8)
 )
