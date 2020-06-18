@@ -1,8 +1,11 @@
+import os
 import numpy as np
 
 from mnist_ten.data import image_shape
 
 
+
+weights_path = os.path.join(os.path.dirname(__file__), 'classifier_weights.pth')
 
 num_channels_between = 64
 num_channels_squeeze = 32
