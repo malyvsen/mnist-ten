@@ -5,8 +5,8 @@ from .config import data_path, num_classes
 
 
 
-train_full = tv.datasets.MNIST(data_path, download=True, train=True)
-test = tv.datasets.MNIST(data_path, download=True, train=False)
+train_full = tv.datasets.MNIST(data_path, download=True, transform=tv.transforms.ToTensor(), train=True)
+test = tv.datasets.MNIST(data_path, download=True, transform=tv.transforms.ToTensor(), train=False)
 
 train_labeled = {label: [] for label in range(num_classes)}
 train_unlabeled = []

@@ -21,7 +21,7 @@ class RotoflipDataset(torch.utils.data.Dataset):
 
     def __getitem__(self, idx):
         rotoflip_id = np.random.randint(8)
-        return rotoflip(self.slave[idx], rotoflip_id)
+        return rotoflip(self.slave[idx], rotoflip_id), rotoflip_id
 
 
 def rotoflip(image, rotoflip_id):
@@ -36,11 +36,11 @@ def rotoflip(image, rotoflip_id):
 def flip(image, flip_id):
     assert flip_id >= 0
     assert flip_id < 4
-    if flip == 0:
+    if flip_id == 0:
         return image
-    if flip == 1:
+    if flip_id == 1:
         return image.flip(-1)
-    if flip == 2:
+    if flip_id == 2:
         return image.flip(-2)
-    if flip == 3:
+    if flip_id == 3:
         return image.flip(-2, -1)
