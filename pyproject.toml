@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "mnist-ten"
+version = "0.1.0"
+description = "MNIST classification using only 10 labeled examples."
+authors = ["malyvsen"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+numpy = "^1.18.5"
+torch = "^1.5.0"
+torchvision = "^0.6.0"
+tqdm = "^4.46.1"
+
+[tool.poetry.dev-dependencies]
+jupyter = "^1.0.0"
+matplotlib = "^3.2.2"
+plotly = "^4.8.1"
+pylint = "^2.5.3"
