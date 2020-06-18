@@ -1,2 +1,2 @@
-from .config import batch_size, num_classes
-from .data import train_labeled, train_unlabeled, test, train_unlabeled_loader, test_loader 
+from .config import batch_size, num_classes, image_shape
+from .loaders import train_rotoflip_loader, train_labeled_loader, test_loader

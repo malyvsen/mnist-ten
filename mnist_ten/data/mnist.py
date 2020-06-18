@@ -1,8 +1,7 @@
-import torch
 import torchvision as tv
 from tqdm.auto import tqdm
 
-from .config import data_path, num_classes, batch_size
+from .config import data_path, num_classes
 
 
 
@@ -18,6 +17,3 @@ for image, label in tqdm(train_full):
         train_unlabeled.append(image)
 
 train_labeled = [(image, label) for label, images in train_labeled.items() for image in images]
-
-train_unlabeled_loader = torch.utils.data.DataLoader(train_unlabeled, batch_size=batch_size, shuffle=True)
-test_loader = torch.utils.data.DataLoader(test, batch_size=batch_size, shuffle=False)
