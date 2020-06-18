@@ -28,9 +28,7 @@ classifier = torch.nn.Sequential(
 )
 
 rotoflip_head = torch.nn.Sequential(
-    torch.nn.Linear(flattened_length, 64),
-    torch.nn.LeakyReLU(),
-    torch.nn.Linear(64, 8)
+    torch.nn.Linear(flattened_length, 8)
 )
 
 rotoflip = torch.nn.Sequential(
