@@ -44,7 +44,11 @@ I then took the first few of that classifier's layers and trained a few new laye
 
 I also checked to see how well a simple nearest-neighbor classifier performs - indeed not bad! It also got an accuracy of 52%.
 
-I spent 9 hours on programming, the training took 3 hours in total.
+### The time it took
+* 2 hours - basic data loading & baseline implementation
+* 5 hours - programming model architecture, training & validation
+* 2 hours - experimenting with data augmentation
+* 3 hours - training models (without interaction)
 
 
 ## What didn't work
