@@ -38,10 +38,10 @@ I also checked to see how well a simple nearest-neighbor classifier performs - i
 * Training the entire model, instead of just the head, on the main task
 * Alternating between training on the main and auxiliary tasks
 * A few different architectures & hyperparameters
+* Data augmentation - it's there, but doesn't seem to be helping much
 
 
 ## Possible improvements
-* Use data augmentation on the labeled training set
 * Try many different architectures (especially simpler ones! I probably over-engineered the model)
 * Try a mix between training the entire model and training just the head
 * Experiment with learning rate scheduling and optimizers
