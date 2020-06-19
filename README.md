@@ -7,7 +7,7 @@ Use only one labeled example for each digit from the MNIST training set - the re
 
 
 ## Instructions
-Without installing anything, you can take a look at the [validation](validate.ipynb), [training](train.ipynb), and [baseline](baseline.ipynb) notebooks.
+Without installing anything, you can take a look at the [data test](data_test.ipynb), [validation](validate.ipynb), [training](train.ipynb), and [baseline](baseline.ipynb) notebooks.
 
 But if you do want to go deeper, read on!
 
@@ -29,9 +29,11 @@ pip install -r requirements.txt
 ## What I did
 I used the unlabeled data to train a classifier on an auxiliary task: predicting how an image has been rotated/flipped. To be successful at this, the classifier needs to figure out what the different digits look like, and form a sensible early vision pipeline.
 
-I then took the first few of that classifier's layers and trained a few new layers on top of them, this time to solve the main task - classify digits. The insights from the auxiliary task were re-used to help solve the main one, yielding an accuracy of 53%.
+I then took the first few of that classifier's layers and trained a few new layers on top of them, this time to solve the main task - classify digits. The insights from the auxiliary task were re-used to help solve the main one, yielding an accuracy of 52%.
 
-I also checked to see how well a simple nearest-neighbor classifier performs - indeed not bad! It got an accuracy of 52%, barely lower than with deep learning.
+I also checked to see how well a simple nearest-neighbor classifier performs - indeed not bad! It also got an accuracy of 52%.
+
+I spent 9 hours on programming, the training took 3 hours in total.
 
 
 ## What didn't work
