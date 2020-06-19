@@ -26,6 +26,16 @@ pip install -r requirements.txt
 ipython kernel install --name "mnist-ten" --user
 ```
 
+### Example code
+```python
+import torch
+from mnist_ten.data import test_loader
+from mnist_ten.models import classifier, weights_path
+
+classifier.load_state_dict(torch.load(weights_path))
+classifier(next(iter(test_loader))) # classify one batch
+```
+
 
 ## What I did
 I used the unlabeled data to train a classifier on an auxiliary task: predicting how an image has been rotated/flipped. To be successful at this, the classifier needs to figure out what the different digits look like, and form a sensible early vision pipeline.
