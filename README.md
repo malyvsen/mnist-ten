@@ -6,7 +6,7 @@ Proof that I can do machine learning 🌈
 Use only one labeled example for each digit from the MNIST training set - the rest can be used unlabeled. Make a working classifier!
 
 
-## Instructions
+## To check it out
 Without installing anything, you can take a look at the [data test](https://nbviewer.jupyter.org/github/malyvsen/mnist-ten/blob/master/data_test.ipynb), [validation](https://nbviewer.jupyter.org/github/malyvsen/mnist-ten/blob/master/validate.ipynb), [training](https://nbviewer.jupyter.org/github/malyvsen/mnist-ten/blob/master/train.ipynb), and [baseline implementation](https://nbviewer.jupyter.org/github/malyvsen/mnist-ten/blob/master/baseline.ipynb) notebooks.
 
 But if you do want to go deeper, read on!
@@ -23,6 +23,7 @@ poetry shell # spawn a new shell within the venv
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+ipython kernel install --name "mnist-ten" --user
 ```
 
 
