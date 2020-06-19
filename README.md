@@ -7,7 +7,7 @@ Use only one labeled example for each digit from the MNIST training set - the re
 
 
 ## To check it out
-Without installing anything, you can take a look at the [data test](https://nbviewer.jupyter.org/github/malyvsen/mnist-ten/blob/master/data_test.ipynb), [validation](https://nbviewer.jupyter.org/github/malyvsen/mnist-ten/blob/master/validate.ipynb), [training](https://nbviewer.jupyter.org/github/malyvsen/mnist-ten/blob/master/train.ipynb), and [baseline implementation](https://nbviewer.jupyter.org/github/malyvsen/mnist-ten/blob/master/baseline.ipynb) notebooks.
+Without installing anything, you can take a look at the [data test](https://nbviewer.jupyter.org/github/malyvsen/mnist-ten/blob/master/data_test.ipynb), [validation](https://nbviewer.jupyter.org/github/malyvsen/mnist-ten/blob/master/validate.ipynb), [training](https://nbviewer.jupyter.org/github/malyvsen/mnist-ten/blob/master/train.ipynb), and [baseline implementation](baseline.ipynb "Best viewed locally - nbviewer is having difficulties") notebooks.
 
 But if you do want to go deeper, read on!
 
